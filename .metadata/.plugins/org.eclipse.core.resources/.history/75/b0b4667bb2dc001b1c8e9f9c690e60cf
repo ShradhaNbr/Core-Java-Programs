@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class coinFlip {
+
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+		int n, tails = 0, heads = 0;
+		double head_percent, tail_percent;
+		System.out.println("How many times coin to be flipped");
+		n=sc.nextInt();
+		for(int i=0;i<n;i++) {
+			double coinFlip = Math.floor(Math.random() *10) %2;
+				if (coinFlip<0.5) {
+					System.out.println("Tails");
+					tails++;
+				}
+		else
+			System.out.println("Heads");
+			heads++;
+		}
+		tail_percent=(tails/n)*100;
+		head_percent=(heads/n)*100;
+		System.out.println("Tail percentage is " + tail_percent);
+		System.out.println("Head percentage is "+ head_percent);
+	}
+}

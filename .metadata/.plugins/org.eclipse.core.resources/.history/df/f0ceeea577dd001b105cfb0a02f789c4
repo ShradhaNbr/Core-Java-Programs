@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class quotientAndRemainder {
+public static void main(String[] args) {
+	double quo;
+	int num1,num2, rem;
+	System.out.println("Enter the divident");
+	Scanner sc = new Scanner(System.in);
+	num1=sc.nextInt();
+	System.out.println("Enter the divisor");
+	num2 = sc.nextInt();
+	quo=num1/num2;
+	rem=num1%num2;
+	System.out.println("Quotient is " + quo);
+	System.out.println("Remainder is " + rem);
+}
+}

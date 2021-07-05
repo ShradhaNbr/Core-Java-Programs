@@ -1,0 +1,9 @@
+import java.util.Scanner; 
+
+public class coinFlip {
+	Scanner sc=new Scanner(System.in);
+	int n;
+	System.out.println("How many time coin to be flipped");
+	n=sc.nextInt();
+	
+}
